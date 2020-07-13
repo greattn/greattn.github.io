@@ -251,7 +251,7 @@ header .container ul li a.active {
 }
 
 #about ul li:nth-child(5) a {
-	background-image: url('images/social/be.png');
+	background-image: url('images/social/Be.png');
 }
 
 #about ol {
@@ -806,11 +806,11 @@ footer div ul li:nth-child(3) a {
 }
 
 footer div ul li:nth-child(4) a {
-	background-image: url('images/social/be.png'); 
+	background-image: url('images/social/Be.png'); 
 }
 
 footer div ul li:nth-child(5) a {
-	background-image: url('images/social/linkedin.png'); 
+	background-image: url('images/social/Linkedin.png'); 
 }
 
 /** responsive **/
