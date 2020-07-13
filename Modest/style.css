@@ -368,8 +368,7 @@ header .container ul li a.active {
 	position: relative;
 }
 
-#team-list > div:hover > div .mask,
-#team-list > div:active > div .mask{
+#team-list > div:hover > div .mask{
 	display: block;
 	position: absolute;
 	top: 0;
@@ -382,30 +381,24 @@ header .container ul li a.active {
 	align-items: center;
 }
 
-#team-list > div:hover .info,
-#team-list > div:active .info {
+#team-list > div:hover .info {
 	background-color: #3a454d;
 }
 
-#team-list > div:hover .mask ul,
-#team-list > div:active .mask ul {
+#team-list > div:hover .mask ul {
 	letter-spacing: -2px;
 }
 
-#team-list > div:hover .mask ul li,
-#team-list > div:active .mask ul li {
+#team-list > div:hover .mask ul li {
 	display: inline-block;
 }
 
-#team-list > div .mask ul li a:hover,
-#team-list > div .mask ul li a:active {
+#team-list > div .mask ul li a:hover {
 	background-color: #4e5a62;
 }
 
 #team-list > div:hover h4,
-#team-list > div:hover p,
-#team-list > div:active h4,
-#team-list > div:active p {
+#team-list > div:hover p {
 	color: white;
 }
 
