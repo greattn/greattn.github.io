@@ -370,7 +370,6 @@ header .container ul li a.active {
 
 #team-list > div:hover > div .mask,
 #team-list > div:active > div .mask {
-	display: block;
 	position: absolute;
 	top: 0;
 	left: 0;
