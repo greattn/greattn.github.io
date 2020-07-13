@@ -385,7 +385,8 @@ header .container ul li a.active {
 	background-color: #3a454d;
 }
 
-#team-list > div:hover .mask ul {
+#team-list > div:hover .mask ul,
+#team-list > div:active .mask ul {
 	letter-spacing: -2px;
 }
 
@@ -393,7 +394,8 @@ header .container ul li a.active {
 	display: inline-block;
 }
 
-#team-list > div .mask ul li a:hover {
+#team-list > div .mask ul li a:hover
+ {
 	background-color: #4e5a62;
 }
 
@@ -1174,6 +1176,11 @@ footer div ul li:nth-child(5) a {
 		margin-bottom: 20px;
 	}
 
+	#work .container > div > div:hover .mask {
+		background-position: center center;
+	}
+
+
 }
 
 @media screen and (max-width: 500px) {
@@ -1187,9 +1194,13 @@ footer div ul li:nth-child(5) a {
 	}
 
 	#hero .container ul {
-	    margin-top: 50px;
+	    margin-top: 10px;
 	}
 
+	#hero .container div a:nth-child(2) {
+	     margin-left: 0px;
+	     margin-top: 10px; 
+	}
 	#about .container > div > div:first-child {
 	    padding-bottom: 30px;
 	}
@@ -1231,4 +1242,25 @@ footer div ul li:nth-child(5) a {
 	    width: 100%;
 	    margin: 20px 0px 20px 0px;
 	}
+
+	footer div {
+		display: block;
+	}
+	footer div p,
+	footer div ul {
+		text-align: center;
+		display: block;
+		padding-bottom: 30px;
+	}	
+
+	#features .container > div > div {
+		display: block;
+		text-align: center;
+	}
+
+	#features .container > div > div img {
+    max-width: 100%;
+    margin-right: 15px;
+    width: 100%;
+}
 }
