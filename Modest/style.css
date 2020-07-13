@@ -368,7 +368,8 @@ header .container ul li a.active {
 	position: relative;
 }
 
-#team-list > div:hover > div .mask{
+#team-list > div:hover > div .mask,
+#team-list > div:active > div .mask {
 	display: block;
 	position: absolute;
 	top: 0;
@@ -381,7 +382,8 @@ header .container ul li a.active {
 	align-items: center;
 }
 
-#team-list > div:hover .info {
+#team-list > div:hover .info,
+#team-list > div:active .info {
 	background-color: #3a454d;
 }
 
@@ -390,17 +392,20 @@ header .container ul li a.active {
 	letter-spacing: -2px;
 }
 
-#team-list > div:hover .mask ul li {
+#team-list > div:hover .mask ul li,
+#team-list > div:active .mask ul li {
 	display: inline-block;
 }
 
-#team-list > div .mask ul li a:hover
- {
+#team-list > div .mask ul li a:hover,
+#team-list > div .mask ul li a:active {
 	background-color: #4e5a62;
 }
 
 #team-list > div:hover h4,
-#team-list > div:hover p {
+#team-list > div:hover p,
+#team-list > div:active h4,
+#team-list > div:active p {
 	color: white;
 }
 
@@ -1069,6 +1074,7 @@ footer div ul li:nth-child(5) a {
 	}
 	#team-list > div img {
 		width: 100%;
+		max-width: 100%;
 	}
 
 	#team-list > div h4 {
@@ -1213,10 +1219,6 @@ footer div ul li:nth-child(5) a {
 		display: block;
 		width: 75%;
 		margin: 40px auto;
-	}
-
-	#team-list > div img {
-	    max-width: 100%; 
 	}
 
 	#work .container > div {
