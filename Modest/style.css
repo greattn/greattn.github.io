@@ -1,0 +1,1254 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0px auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/** header **/
+
+
+header {
+	background-color: #1d2126;
+	height: 81px;
+}
+
+h1 {
+	line-height: 81px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h2.head-first-block {
+	position: relative;
+	padding-left: 24px;
+	color: #292f36;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom: 57px;
+}
+
+h2.head-first-block:before {
+	content: ' ';
+	width: 10px;
+	height: 35px;
+	display: inline-block;
+	background-color: #e1e6ea;
+	position: absolute;
+	left: 0;
+	top: 1px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+header .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+header .container ul {
+	height: 81px;
+}
+
+header .container ul li {
+	display: inline-block;
+	line-height: 81px;
+}
+
+header .container ul li a {
+	display: inline-block;
+	height: 30px;
+	color: #a4aead;
+	text-transform: uppercase;
+	border: 2px solid transparent;
+	border-radius: 2px;
+	padding: 0px 10px;
+	line-height: 30px;
+	margin-left: 16px;
+	font-size: 14px;
+}
+
+header .container ul li a:hover {
+	border: 2px solid #5b6168;
+}
+
+header .container ul li a.active {
+	border-color: #23b7a4;
+	color: #23b7a4;
+}
+
+/** hero **/
+
+#hero {
+	height: 660px;
+	background-image: url(images/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #404257;
+	background-position: center;
+}
+#hero .container h2,
+#hero .container p,
+#hero .container div {
+	max-width: 585px;
+}
+
+#hero .container {
+	padding-top: 222px;
+	position: relative;
+	height: 660px;
+}
+
+#hero .container h2 {
+	line-height: 42px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+#hero .container p {
+	line-height: 26px;
+	color: #ccd0d7;
+	font-size: 16px;
+	margin-top: 26px;
+}
+#hero .container div {
+	margin-top: 36px;
+}
+#hero .container div a {
+	display: inline-block;
+	height: 44px;
+	line-height: 40px;
+	padding: 0px 30px;
+	border: 2px solid white;
+	border-radius: 3px;
+	font-size: 14px;
+	color: white;	
+	text-transform: uppercase;
+}
+
+#hero .container div a:hover {
+	background-color: #23b7a5;
+	border-color: #23b7a5;
+}
+
+#hero .container div a:nth-child(2) {
+	margin-left: 11px;
+}
+
+#hero .container ul {
+	position: absolute;
+	right: 0px;
+	bottom: 30px;
+}
+
+#hero .container ul li:first-child {
+	margin-left: 0px;
+}
+
+#hero .container ul li{
+	display: inline-block;
+	margin-left: 9px;
+}
+
+#hero .container ul li a {
+	display: inline-block;
+	border: 2px solid white;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	text-indent: -10000000px;
+}
+
+#hero .container ul li a.current {
+	background-color: white;
+}
+
+
+/** about **/
+#about {
+	border-bottom: 1px solid #dde1e4;
+}
+
+#about .container {
+	margin-top: 83px;
+	margin-bottom: 87px;
+}
+
+#about .container > div {
+	display: flex;
+	justify-content: space-between;
+}
+
+#about .container > div > div:first-child {
+	width: 654px;
+}
+
+#about .container > div > div:last-child {
+	width: 457px;
+}
+
+#about .container p {
+	color: #8d8f92;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+#about .container > div > div:first-child p {
+	margin-bottom: 25px;
+}
+
+#about ul {
+	padding-top: 21px;
+}
+
+#about ul li {
+	display: inline-block;
+}
+
+#about ul li a {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	text-indent: -1000000px;
+	background-color: #c8cdd0;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#about ul li a:hover {
+	background-color: #d0d5d9;
+}
+
+#about ul li:nth-child(1) a {
+	background-image: url('images/social/facebook.png');
+}
+
+#about ul li:nth-child(2) a {
+	background-image: url('images/social/twitter.png');
+}
+
+#about ul li:nth-child(3) a {
+	background-image: url('images/social/google.png');
+}
+
+#about ul li:nth-child(4) a {
+	background-image: url('images/social/dribbble.png');
+}
+
+#about ul li:nth-child(5) a {
+	background-image: url('images/social/be.png');
+}
+
+#about ol {
+	counter-reset: about;
+}
+
+
+#about ol li {
+	list-style: none;
+	position: relative;
+	padding-left: 67px;
+	margin-bottom: 30px;
+}
+
+#about ol li:before {
+	counter-increment: about;
+	content: counters(about, ".", decimal-leading-zero);
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: #23b7a4;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#about ol li h4 {
+	margin-bottom: 3px;
+	font-size: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #292f36;
+}
+
+/** team **/
+
+#team {
+	margin-top: 80px;
+	margin-bottom: 100px; 
+}
+
+
+#team-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+#team-list > div {
+	width: calc((100% - 90px) / 4)
+}
+
+
+#team-list .mask{
+	display: none;
+}
+
+
+#team-list img {
+	display: block;
+	max-width: 100%;
+}
+
+#team-list h4 {
+	color: #292f36;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+#team-list p {
+	font-size: 14px;
+	font-weight: normal;
+	color: #8d8f92;
+}
+
+#team-list .info {
+	background-color: #e1e6ea;
+	height: 74px;
+	padding: 20px 0 18px 20px;
+}
+
+#team-list .mask ul {
+	list-style: none;
+}
+
+#team-list .mask ul li a {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: #3a454d;
+	text-indent: -10000000px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto 15px;
+}
+
+#team-list .mask ul li:nth-child(1) a {
+	background-image: url('images/social/twitter.png')
+}
+
+#team-list .mask ul li:nth-child(2) a {
+	background-image: url('images/social/facebook.png')
+}
+
+#team-list .mask ul li:nth-child(3) a {
+	background-image: url('images/social/Linkedin.png')
+}
+
+#team-list > div > div:not(.info) {
+	position: relative;
+}
+
+#team-list > div:hover > div .mask{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#team-list > div:hover .info {
+	background-color: #3a454d;
+}
+
+#team-list > div:hover .mask ul {
+	letter-spacing: -2px;
+}
+
+#team-list > div:hover .mask ul li {
+	display: inline-block;
+}
+
+#team-list > div .mask ul li a:hover {
+	background-color: #4e5a62;
+}
+
+#team-list > div:hover h4,
+#team-list > div:hover p {
+	color: white;
+}
+
+/** work **/
+
+#work h2.head-first-block {
+	position: relative;
+	padding-left: 24px;
+	color: white;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom: 57px;
+}
+
+#work h2.head-first-block:before {
+	content: ' ';
+	width: 10px;
+	height: 35px;
+	display: inline-block;
+	background-color: #4e5a62;
+	position: absolute;
+	left: 0;
+	top: 1px;
+}
+
+#work {
+	background-color: #3a454d;
+}
+
+#work .container {
+	padding-top: 80px;
+	padding-bottom: 60px;
+}
+
+#work .container > div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#work .container > div > div {
+	display: block;
+	margin-bottom: 30px;
+	position: relative;
+	width: calc((100% - 60px) / 3);
+}
+
+#work .container > div > div > img {
+	display: block;
+	max-width: 100%;
+}
+
+#work .container > div > div .mask{
+	display: none;
+}
+
+#work .container button {
+	font-size: 14px;
+	color: white;
+	width: 151px;
+	height: 44px;
+	border: 2px solid white;
+	border-radius: 3px;
+	background-color: transparent;
+	cursor: pointer;
+	margin: 30px auto 0px auto;
+}
+
+#work .container > div > div h4 {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+#work .container > div > div:hover .mask {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.5);
+	background-repeat: no-repeat;
+	background-position: center 95px;
+	background-image: url(images/plus.png);
+	cursor: pointer;
+}
+
+#work .container > div > div:hover h4 {
+	display: block;
+	background-color: #292f36;
+	height: 60px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	color: white;
+	padding-left: 20px;
+	line-height: 60px;
+}
+
+#work .container > div > div:hover {
+
+}
+
+#work .container button:hover {
+	background-color: #23b7a5;
+	border-color: #23b7a5;
+}
+
+/** What we do **/
+
+#service .container {
+	margin-top: 80px;
+	padding-bottom: 70px;
+}
+
+#service h2.head-first-block {
+	margin-bottom: 90px;
+}
+
+#service .container > div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#service .container > div > div {
+	display: inline-block;
+	width: calc((100% -90px) /4);
+	margin-bottom: 88px;
+}
+
+#service .container > div > div h4 {
+	font-size: 17px;
+	color: #292f36;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 34px;
+	margin-bottom: 25px;
+}
+
+#service .container > div > div p {
+	font-size: 16px;
+	line-height: 26px;
+	color: #8d8f92;
+	font-weight: normal;
+	text-align: center;
+	padding-left: 10px;
+}
+
+#service .container > div > div:before {
+	content: ' ';
+	display:block;
+	width: 100%;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+#service .container > div > div:nth-child(4n + 1):before{
+	background-image: url('images/service/setup.png');
+}
+
+#service .container > div > div:nth-child(4n + 2):before{
+	background-image: url('images/service/pencil.png');
+}
+
+#service .container > div > div:nth-child(4n + 3):before{
+	background-image: url('images/service/mobile.png');
+}
+
+#service .container > div > div:nth-child(4n + 4):before{
+	background-image: url('images/service/clock.png');
+}
+
+
+/** features **/ 
+
+#features {
+	background-color: #3a454d;
+}
+
+#features h2.head-first-block {
+	margin-bottom: 60px;
+	color: white;
+	text-transform: uppercase;
+}
+
+#features h2.head-first-block:before {
+	content: ' ';
+	width: 10px;
+	height: 35px;
+	display: inline-block;
+	background-color: #4e5a62;
+	position: absolute;
+	left: 0;
+	top: 1px;
+}
+
+#features .container {
+	padding-top: 85px;
+	padding-bottom: 116px;
+}
+
+#features .container > div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#features .container > div > div {
+	display: block;
+	width: calc((100% - 60px) / 3);
+}
+
+#features .container > div > div img {
+	max-width: 100%;
+}
+
+#features .container > div > div h4 {
+	margin-top: 42px;
+	font-size: 18px;
+	line-height: 42px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+#features .container > div > div p {
+	margin-top: 17px;
+	color: #dcdfe1;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: normal;
+}
+
+/** contact **/
+#contact h2.head-first-block {
+	margin-bottom: 60px;
+	margin-top: 64px;
+}
+
+
+#contact .container {
+	margin-bottom: 83px;
+}
+
+#contact-form {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0px;
+}
+
+#contact-form > div,
+#contact-form form {
+	display: block;
+	width: calc((100% - 30px) / 2 );
+}
+
+#contact-form > div {
+	padding-top: 60px;
+}
+
+#contact-form > div h4 {
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #292f36;
+	margin-bottom: 35px;
+}
+
+#contact-form > div p {
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: normal;
+	color: #8d8f92;
+	margin-bottom: 30px;
+}
+
+#contact-form form {
+	background-color: white;
+	padding: 30px;
+	margin-top: -130px;
+    z-index: 2;
+}
+
+
+#contact-form form div:nth-child(1) {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+#contact-form form div:nth-child(1) div {
+	display: inline-block;
+	width: calc((100% - 15px) / 2);
+	margin-bottom: 29px;
+}
+
+#contact-form label {
+	display: block;
+	font-size: 14px;
+	line-height: 26px;
+	text-transform: uppercase;
+	color: #8d8f92;
+	margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+	border-radius: 3px;
+	border: none;
+	background-color: #eaeef1;
+	outline: none;
+	max-width: 100%;
+}
+
+#contact-form input {
+	display: block;
+	height: 44px;
+	padding: 5px 20px;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+#contact-form textarea {
+	display: block;
+	width: 495px;
+	height: 159px;
+	margin-bottom: 30px;
+	resize: none;
+	padding: 20px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+#contact-form button {
+	width: 151px;
+	height: 44px;
+	border-radius: 3px;
+	border: none;
+	background-color: #23b7a4;
+	color: white;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 28px;
+	cursor: pointer;
+}
+
+/** footer **/
+
+footer {
+	background-color: #3a454d;
+	height: 95px;
+}
+
+footer div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer div p {
+	font-size: 14px;
+	line-height: 26px;
+	color: white;
+}
+
+footer div ul {
+	list-style: none;
+	display: block;
+	height: 95px;
+	display: flex;
+	align-items: center;
+}
+
+footer div ul li {
+	display: inline-block;
+}
+
+footer div ul li a {
+	display: inline-block;
+	width: 25px;
+	height: 20px;
+	text-indent: -1000000px;	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 15px;
+	margin-left: 5px;
+}
+
+footer div ul li:nth-child(1) a {
+	background-image: url('images/social/twitter.png'); 
+}
+
+footer div ul li:nth-child(2) a {
+	background-image: url('images/social/facebook.png'); 
+}
+
+footer div ul li:nth-child(3) a {
+	background-image: url('images/social/skype.png'); 
+}
+
+footer div ul li:nth-child(4) a {
+	background-image: url('images/social/be.png'); 
+}
+
+footer div ul li:nth-child(5) a {
+	background-image: url('images/social/linkedin.png'); 
+}
+
+/** responsive **/
+
+
+@media screen and (max-width: 960px) {
+
+	#hero {
+		height: 550px;
+	}
+
+	h2.head-first-block {
+		margin-bottom: 40px;
+	}
+
+
+	#hero .container h2,
+	#hero .container p,
+	#hero .container div {
+		max-width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	#hero .container {
+	    padding-top: 150px;	
+	}
+
+
+	#hero .container ul {
+		position: static;
+		text-align: center;
+		margin-top: 120px;
+	}
+
+	#about .container {
+	    margin-top: 50px;
+	    margin-bottom: 50px;
+	}
+
+	#about .container > div {
+	    display: block;
+	}
+
+	#about .container > div > div:first-child {
+	    width: 100%;
+	    padding-bottom: 50px;
+	}
+
+	#about .container > div > div:last-child {
+	    width: 100%;
+	}
+	#team {
+		margin-top: 60px;
+    	margin-bottom: 70px;
+	}
+
+	#team-list > div {
+		width: calc((100% - 30px) / 4);
+	}
+
+	#work h2.head-first-block {
+		margin-bottom: 40px;
+	}
+
+	#work .container > div > div {
+		width: calc((100% - 30px) / 3);
+		margin-bottom: 15px;
+	}
+
+	#work .container {
+	    padding-top: 50px;
+	    padding-bottom: 30px;
+	}
+
+	#work .container button {
+		margin-top: 15px;
+	}	
+
+	#service .container {
+	    margin-top: 50px;
+	    padding-bottom: 40px;
+	}
+
+	#service .container > div > div {
+		margin-bottom: 58px;
+	}
+
+	#service h2.head-first-block {
+		margin-bottom: 50px;
+	}
+
+	#features .container {
+		padding-top: 50px;
+   		padding-bottom: 80px;
+	}
+
+	#features .container > div > div {
+	    width: calc((100% - 40px) / 3);
+	}
+
+	#features h2.head-first-block {
+	    margin-bottom: 40px;
+	}
+
+	#contact h2.head-first-block {
+	    margin-bottom: 40px;
+	    margin-top: 44px;
+	}
+
+	#contact-form {
+		margin-top: -70px;
+	}
+
+	#contact-form form div:nth-child(1) {
+		display: block;
+	}
+
+	#contact-form form div:nth-child(1) div {
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	#contact-form input {
+		width: 100%;
+	}
+
+	#team-list > div > div .mask {
+		display: inline-block;
+		position: absolute;
+		right: 0px;
+		bottom: -70px;
+	}
+
+	#team-list > div .mask ul li {
+		display: inline-block;
+	}
+
+	#team-list  div .info {
+		background-color: #3a454d;
+		padding-left: 10px;
+	}
+
+	#team-list > div .mask ul {
+		letter-spacing: -4px;
+	}
+
+	#team-list > div h4,
+	#team-list > div p {
+		color: white;
+		font-size: 0.8em;
+		/*width: 70%;
+*/
+	}
+
+	#team-list .mask ul li a {
+		width: 30px;
+		height: 30px;
+		background-color: transparent;
+	}
+
+	#team-list > div:hover > div .mask {
+		background-color: transparent;
+	}
+ 
+	#team-list > div:hover > div .mask ul {
+		display: inline-block;
+	    position: absolute;
+	    right: 0px;
+	    bottom: -70px;
+	    letter-spacing: -4px;
+
+	}	
+}
+
+@media screen and (max-width: 810px) {
+	header {
+		height: auto;
+	}
+
+	header .container {
+		display: block;
+		text-align: center;	
+	}
+
+	header h1 {
+		line-height: 50px;
+	}
+
+	header .container ul {
+		height: auto;
+	}
+
+	header .container ul li {
+		line-height: 50px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	h2 {
+	    font-size: 28px;
+	}
+	h2.head-first-block {
+	    margin-bottom: 30px;
+	    text-align: center;
+	}
+
+	#hero .container h2 {
+	    line-height: 36px;
+	}
+
+	header h1 {
+	    line-height: 40px;
+	}
+
+	header .container ul li {
+	    line-height: 40px;
+	}
+
+	#hero {
+	    height: 450px;
+	}
+
+	#hero .container {
+	    padding-top: 100px;
+	}
+
+
+	#hero .container ul {
+	    margin-top: 100px;	
+	}
+
+	#about .container {
+		margin-top: 30px;
+   		margin-bottom: 30px;
+	}
+
+	#about ul {
+	    padding-top: 0px;
+	}
+
+	#team {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	#team-list {
+		flex-wrap: wrap;
+	}
+	#team-list > div {
+		width: calc((100% - 60px) / 2);
+		margin: 0px 15px 40px 15px;
+	}
+	#team-list > div img {
+		width: 100%;
+	}
+
+	#team-list > div h4 {
+		font-size: 16px;
+	}
+
+	#team-list > div p {
+		font-size: 14px;
+	}
+
+	#team-list .info {
+		padding-bottom: 40px;
+		height: auto;
+	}
+
+	#team-list .mask ul li a {
+		width: 40px;
+		height: 40px;
+	}
+
+	#team-list > div > div .mask {
+		bottom: -90px;
+	}
+
+	#team-list > div:hover > div .mask ul {
+	    bottom: -90px;
+	}	
+
+	#work .container {
+		text-align: center;
+		padding-top: 30px;
+    	padding-bottom: 20px;
+	}
+
+	#work .container > div > div {
+	    width: calc((100% - 60px) / 2);
+	    margin: 0px 15px 20px 15px;
+	}
+
+	#service .container {
+		text-align: center;
+	}
+
+	#service h2.head-first-block {
+	    margin-bottom: 30px;
+	}
+
+	#service .container > div > div {
+		width: calc((100% - 60px) / 2);
+	    margin: 0px 15px 20px 15px;
+	}
+
+	#features .container {
+	    padding-top: 30px;
+	    padding-bottom: 40px;
+	}
+
+	#features h2.head-first-block {
+	    margin-bottom: 30px;
+	    text-align: center;
+	}
+
+	#features .container > div {
+	    display: block;
+	}
+
+	#features .container > div > div {
+	    width: 100%;
+	    display: flex;
+	    margin-bottom: 40px;
+	}
+
+	#features .container > div > div img {
+	    max-width: 100%;
+	    margin-right: 15px;
+	    width: 50%;
+	}
+
+	#features .container > div > div h4 {
+	    margin-top: 0px;
+	}
+
+	#contact-form {
+		display: block;
+	    margin-top: 0px;
+	}
+
+	#contact-form > div, #contact-form form {
+	    display: block;
+	    width: 100%;
+	}
+
+	#contact-form > div {
+	    padding-top: 40px;
+	}
+
+	#contact-form > div h4 {
+		margin-bottom: 20px;
+	}
+
+	#contact-form > div p {
+		margin-bottom: 10px;
+	}
+
+	#contact-form form {
+		padding: 20px 0px 20px 0px;
+		margin-top: 0px;
+	}
+
+	#contact-form form div:nth-child(1) div {
+	    margin-bottom: 10px;
+	}
+
+	#contact-form textarea {
+		width: 100%;
+	}
+
+	#contact-form button {
+		width: 100%;
+	}
+
+	#contact .container {
+		margin-bottom: 20px;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	h2.head-first-block:before {
+		display: none;
+	}
+
+	#hero .container {
+	    padding-top: 80px;
+	}
+
+	#hero .container ul {
+	    margin-top: 50px;
+	}
+
+	#about .container > div > div:first-child {
+	    padding-bottom: 30px;
+	}
+
+	#team-list {
+	    display: block;
+	}
+	#team-list > div { 
+		max-width: 100%;
+		display: block;
+		width: 75%;
+		margin: 40px auto;
+	}
+
+	#team-list > div img {
+	    max-width: 100%; 
+	}
+
+	#work .container > div {
+	    display: block;
+	}
+
+	#work .container > div > div {
+	    width: 100%;
+	    margin: 20px 0px 20px 0px;
+	}
+
+	#work .container > div > div > img {
+	    display: block;
+	    max-width: 100%;
+	    margin: 0px auto;
+	}
+
+	#service .container > div {
+	    display: block;
+	}
+
+	#service .container > div > div {
+	    width: 100%;
+	    margin: 20px 0px 20px 0px;
+	}
+}
