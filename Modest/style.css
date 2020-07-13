@@ -368,7 +368,8 @@ header .container ul li a.active {
 	position: relative;
 }
 
-#team-list > div:hover > div .mask{
+#team-list > div:hover > div .mask,
+#team-list > div:active > div .mask{
 	display: block;
 	position: absolute;
 	top: 0;
