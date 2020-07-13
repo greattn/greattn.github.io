@@ -455,6 +455,7 @@ header .container ul li a.active {
 #work .container > div > div > img {
 	display: block;
 	max-width: 100%;
+	width: 100%;
 }
 
 #work .container > div > div .mask{
