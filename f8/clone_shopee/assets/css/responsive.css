@@ -1,10 +1,5 @@
 /* mobile + tablet */
 @media (max-width: 1023px) {
-    :root {
-        --header-height: 68px;
-        --navbar-height: 0px;
-    }
-
     .header {
         height: auto;
         position: fixed;
@@ -42,10 +37,16 @@
     .mobile-category {
         display: block;
     }
+
 }
 
 /* tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
+    :root {
+        --header-height: 68px;
+        --navbar-height: 0px;
+    }
+
     .hide-on-tablet {
         display: none;
     }    
@@ -70,11 +71,21 @@
     .app-content {
         padding-top: 8px;
     }
-    
+
+    .header__search-history {
+        left: 0;
+        right: 0;
+        width: 100%;
+    }    
 }
 
 /* mobile */
 @media (max-width: 739px) {
+    :root {
+        --header-height: 54px;
+        --navbar-height: 0px;
+    }
+    
     .hide-on-mobile {
         display: none;
     }
@@ -114,6 +125,12 @@
         top: var(--header-height);
     }
 
+    .header__search-history {
+        left: 0;
+        right: 0;
+        width: 100vw;
+    }
+
     .pagination__item {
         margin: 0;
     }
@@ -139,6 +156,28 @@
 
     .footer__content h3 {
         margin: 20px 0px 12px;
+    }
+
+    .footer__heading {
+        text-align: center;
+    }
+
+    .footer-item__link {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__download {
+        justify-content: center;
+    }
+
+    .footer__download-app-link {
+        display: block;
+        margin: 8px 8px;
+    }
+
+    .footer-bottom__text {
+        padding: 20px 0;
     }
 
     @keyframes mobileSearchSideIn {
