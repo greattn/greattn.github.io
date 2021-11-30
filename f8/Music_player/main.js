@@ -67,7 +67,7 @@ const app = {
         image: './assets/img/song7.jpg'
       },
       {
-        name: 'Bước qua nhạu',
+        name: 'Bước qua nhau',
         singer: 'Vũ.',
         path: './assets/music/song8.mp3',
         image: './assets/img/song8.jpg'
