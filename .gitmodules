@@ -1,0 +1,3 @@
+[submodule "path_to_submodule"]
+  path = "greattn.github.io"
+  url = "https://github.com/greattn/greattn.github.io.git"
